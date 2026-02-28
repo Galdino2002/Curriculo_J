@@ -167,3 +167,111 @@ h1 span{
     color: var(--color-text-secondary);
     font-size: 18px;
 }
+/* ================= RESPONSIVIDADE ================= */
+
+/* Telas menores que 1024px (Tablet) */
+@media (max-width: 1024px){
+
+    header{
+        padding: 20px 40px;
+    }
+
+    section{
+        padding: 60px 40px;
+        gap: 40px;
+    }
+
+    h1{
+        font-size: 56px;
+    }
+
+    .container_perfil img{
+        width: 280px;
+    }
+}
+
+/* Telas menores que 768px (Celular) */
+@media (max-width: 768px){
+
+    /* Header */
+    header{
+        padding: 20px;
+    }
+
+    nav ul{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    /* Section vira coluna */
+    section{
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .section_container{
+        max-width: 100%;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .section_container p:first-child{
+        font-size: 16px;
+    }
+
+    .section_container p:nth-of-type(2){
+        font-size: 18px;
+    }
+
+    /* Botões */
+    .container_button ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_button a{
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+    }
+
+    /* Imagem */
+    .container_perfil img{
+        width: 220px;
+        margin-top: 30px;
+    }
+
+    /* Footer */
+    .site-footer{
+        padding: 40px 20px;
+    }
+
+    .footer-name{
+        font-size: 16px;
+    }
+
+    .footer-description{
+        font-size: 13px;
+    }
+}
+
+/* Telas muito pequenas (até 480px) */
+@media (max-width: 480px){
+
+    h1{
+        font-size: 32px;
+    }
+
+    .container_perfil img{
+        width: 180px;
+    }
+
+    .container_button a{
+        padding: 10px 20px;
+    }
+}
+
